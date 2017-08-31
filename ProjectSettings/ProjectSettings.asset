@@ -581,11 +581,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 63ef5872-bc50-4e4c-bf38-ca66d1d1dcaa
+  projectName: 2D-Shooter
+  organizationId: hellobros
   cloudEnabled: 0
   enableNewInputSystem: 0
