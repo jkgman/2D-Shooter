@@ -1,3 +1,6 @@
 # Build and Release Foldersbin/
 Library/
 Temp/
+.vs/
+*.sln
+*.csproj
