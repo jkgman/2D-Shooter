@@ -33,7 +33,7 @@ namespace SpaceShooter
             EnemySpaceship enemyShip = spawnedEnemyObject.GetComponent<EnemySpaceship>();
             if (enemyShip != null)
             {
-                enemyShip.setMovementTargets(_enemyMovementTargets);
+                enemyShip.SetMovementTargets(_enemyMovementTargets);
             }
 
             return enemyShip;

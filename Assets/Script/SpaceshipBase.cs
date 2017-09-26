@@ -10,10 +10,16 @@ namespace SpaceShooter
         [SerializeField]
         private float _speed = 1.5f;
 
+        private Weapon[] _weapons;
+
         public float Speed
         {
             get { return _speed; }
             protected set { _speed = value; }
+        }
+
+        public Weapon[] Weapons {
+            get { return _weapons; }
         }
 
         protected abstract void Move();
@@ -32,6 +38,16 @@ namespace SpaceShooter
             catch (System.Exception exception)
             {
                 Debug.LogException(exception);
+            }
+        }
+
+        protected virtual void Awake() {
+            _weapons = GetComponentsInChildren<Weapon>(true);
+        }
+
+        protected void Shoot() {
+            foreach (Weapon weapons in Weapons) {
+                weapons.Shoot();
             }
         }
 

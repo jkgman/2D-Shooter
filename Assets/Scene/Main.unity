@@ -157,6 +157,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &508060130 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1956563797573766, guid: 21b9f4c471cc2b448a6dc33512df3877,
+    type: 2}
+  m_PrefabInternal: {fileID: 889427657}
+--- !u!58 &508060135
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 508060130}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2
 --- !u!1 &515294171
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +277,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemyMovementTarget1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1577725955494882426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -268,7 +288,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 540706877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 140929399}
@@ -356,7 +376,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186499572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 1.1366668, z: 0}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
   m_Children: []
   m_Father: {fileID: 140929399}
@@ -373,7 +393,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemyMovementTarget3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1577725955494882426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -429,11 +449,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114672814301039270, guid: 602a3fb7bba21be44ae893b02d1e9f67,
-        type: 2}
-      propertyPath: _speed
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 602a3fb7bba21be44ae893b02d1e9f67, type: 2}
   m_IsPrefabParent: 0
@@ -448,7 +463,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemyMovementTarget2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1577725955494882426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -459,7 +474,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036192670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 140929399}

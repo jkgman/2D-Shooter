@@ -8,8 +8,9 @@ namespace SpaceShooter
 
     public class EnemySpaceship : SpaceshipBase
     {
-        private float _reachedDistance = 0.5f;
 
+        [SerializeField]
+        private float _reachedDistance = 0.5f;
         [SerializeField]
         private GameObject[] _movementTargets;
 
@@ -23,7 +24,7 @@ namespace SpaceShooter
             }
 
         }
-        public void setMovementTargets(GameObject[] movementTargets)
+        public void SetMovementTargets(GameObject[] movementTargets)
         {
             _movementTargets = movementTargets;
             _currentMovementTargetIndex = 0;
@@ -31,20 +32,16 @@ namespace SpaceShooter
 
         protected override void Move()
         {
-
             if (_movementTargets == null || _movementTargets.Length == 0)
             {
                 return;
             }
-
-            updateMovementTarget();
-
+            UpdateMovementTarget();
             Vector3 direction = (CurrentMovementTarget.position - transform.position).normalized;
-
             transform.Translate(direction * Speed * Time.deltaTime);
         }
 
-        private void updateMovementTarget()
+        private void UpdateMovementTarget()
         {
             if (Vector3.Distance(transform.position, CurrentMovementTarget.position) < _reachedDistance)
             {
@@ -52,11 +49,11 @@ namespace SpaceShooter
                 {
                     _currentMovementTargetIndex = 0;
                 }
-
                 else
+                {
                     _currentMovementTargetIndex++;
+                }
             }
         }
     }
-
 }
